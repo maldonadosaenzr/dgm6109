@@ -1,0 +1,28 @@
+
+
+h1 {font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+font-size: 2.0rem;
+margin: 2rem;
+color: #2475af;}
+
+h2{
+    color: #9824af;
+    max-width: 40rem;
+}
+
+h3{color: #d86eb2;
+max-width: 40rem;}
+
+img{	
+    
+    border-width: 2px;
+	border-style: ridge;
+	border-color: rgb(198, 171, 109); 
+}
+
+a{
+    transition-property: color;
+	transition-duration: 0.5s;
+}
+
+h4 { color: rgb(88, 156, 88);}
