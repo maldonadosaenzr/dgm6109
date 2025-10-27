@@ -1,0 +1,52 @@
+
+
+
+h1 {font-family:cursive;
+font-size: 2.0rem;
+margin: 1rem;
+color: #e2a5d2;
+justify-content:center;
+}
+
+h2{
+    font-family:cursive;
+    color: #9824af;
+    max-width: 40rem;
+}
+
+h3{
+    font-family:cursive;
+    color: #d86eb2;
+max-width: 40rem;}
+
+img{	
+    font-family:cursive;
+    border-width: 3cqmax;
+	border-style: ridge;
+	border-color: rgb(109, 173, 198);
+    justify-content:center 
+}
+
+a{
+    font-family:cursive;
+    transition-property: color;
+	transition-duration: 0.5s;
+}
+
+h4 { 
+    font-family:cursive;
+    color: rgb(88, 156, 88);}
+
+    .container {
+	display:grid; 
+	grid-template-columns: "header header""nav nav";
+grid-template-columns: 1fr 3fr;
+gap: 3px;
+background-color: rgb(222, 83, 173);
+padding: 10px;
+}
+
+
+
+/* all references taken from both the mini games for css on canvas
+and https://www.w3schools.com/css
