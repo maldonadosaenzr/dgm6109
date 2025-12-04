@@ -1,0 +1,42 @@
+ body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        
+        .chart-container {
+            margin: 20px 0;
+        }
+        
+        .axis {
+            font: 12px sans-serif;
+        }
+        
+        .axis path,
+        .axis line {
+            fill: none;
+            stroke: #000;
+            shape-rendering: crispEdges;
+        }
+        
+        .bar {
+            fill: steelblue;
+        }
+        
+        .bar:hover {
+            fill: rgb(175, 201, 95);
+        }
+        
+        .chart-title {
+            font-size: 16px;
+            font-weight: bold;
+            text-anchor: middle;
+        }
+        
+        .axis-label {
+            font-size: 14px;
+            text-anchor: middle;
+        }
+        
+        .legend {
+            font-size: 12px;
+        }
