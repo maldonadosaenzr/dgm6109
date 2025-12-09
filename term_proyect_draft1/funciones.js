@@ -115,7 +115,7 @@ console.log("pasa")
             // Color scale for coffee categories
             const colorScale = d3.scaleOrdinal()
                 .domain(["No Coffee", "Light Coffee", "Heavy Coffee"])
-                .range(["#a6d82c", "#e0b726", "#e05e26"]); // Green, Orange, Red
+                .range(["#a6d82c", "#e0b726", "#c7781dff"]); // Green, Orange, Red
         
             // Step 5: Create axes
             const xAxis = d3.axisBottom(xScale);
@@ -153,7 +153,14 @@ console.log("pasa")
                 .attr("class", "chart-title")
                 .attr("x", width / 2)
                 .attr("y", 0 - (margin.top / 2))
-                .text("Sleep Quality by Coffee Consumption");
+                .text("Sleep Quality by Coffee Consumption,");
+
+                svg.append("text")
+                .attr("class", "chart-title")
+                .attr("x", width / 2)
+                .attr("y", 0 - (margin.top / 7))
+                .text("if coffee consumption increases; sleep quality decreases.");
+                
         
             // Step 8: Create horizontal bars
             svg.selectAll(".bar")
@@ -168,26 +175,7 @@ console.log("pasa")
                 .style("stroke", "#333")
                 .style("stroke-width", "1px");
             
-            // Step 9: Add legend (positioned below date label within margin)
-            const legend = svg.selectAll(".legend")
-                .data(colorScale.domain())
-                .enter().append("g")
-                .attr("class", "legend")
-                .attr("transform", (d, i) => `translate(${i * 140 + 50}, ${height + 65})`);
-                
-            legend.append("rect")
-                .attr("x", 0)
-                .attr("width", 18)
-                .attr("height", 18)
-                .style("fill", d => colorScale(d));
-                
-            legend.append("text")
-                .attr("x", 25)
-                .attr("y", 9)
-                .attr("dy", ".35em")
-                .style("text-anchor", "start")
-                .style("font-size", "12px")
-                .text(d => d);
+            
             
             // Step 10: Add tooltips
             svg.selectAll(".bar")
