@@ -1,0 +1,29 @@
+
+header {
+font-size: 35;
+
+}
+
+.container {
+
+    background-color: aquamarine;
+    
+    width: 1400px;
+    height:100px;
+    grid-template-rows: auto;
+    
+}
+
+img {
+
+border-start-start-radius:8px ;
+border-end-start-radius:8px;
+
+}
+
+
+
+
+
+
+
